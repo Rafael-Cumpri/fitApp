@@ -4,13 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login - central</title>
     <link rel="stylesheet" href="assets/css/style.index.css">
     <script src="assets/js/script.index.js"></script>
 </head>
 
 <body>
-
+    <main>
+        <section id="logIn">
+            <img src="assets/images/logo.jpg" alt="logo da empresa" width="15%" height="15%" id="logo">
+            <div class="inputs-container">
+                <label for="username">Digite o nome de usuario</label>
+                <input type="text" id="username">
+            </div>
+            <div class="inputs-container">
+                <label for="username">Digite a senha</label>
+                <input type="password" id="password">
+            </div>
+            <button id="confirm" onclick="verify()"></button>
+        </section>
+    </main>
 </body>
 
 </html>
