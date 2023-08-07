@@ -34,6 +34,18 @@ body {
     width:120%;
 }
 
+#confirm {
+    padding: 0.25rem;
+    width:6%;
+    background-color: #65fb65;
+}
+
+#confirm:hover {
+    transition:0.5s;
+    background-color: #22a822;
+    cursor:pointer;
+}
+
 /* colors
 #56b2fd
 
