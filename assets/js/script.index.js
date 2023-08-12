@@ -15,7 +15,7 @@ class Users {
         this.acessScreen = (user) => {
             let password = document.getElementById('password').value
             if (this.verify(password) && this.name == user) {
-                window.location.href = 'FitApp/pages/index.home.html'
+                window.location.href = 'pages/index.home.html'
             } else {
                 document.getElementById('error').innerHTML = 'Usuario ou senha incorretos.'
             }
