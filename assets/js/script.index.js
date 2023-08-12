@@ -15,9 +15,9 @@ class Users {
         this.acessScreen = (user) => {
             let password = document.getElementById('password').value
             if (this.verify(password) && this.name == user) {
-                console.log('funfou')
+                window.location.href = 'C:/Users/junio/Desktop/FitApp/pages/index.home.html'
             } else {
-                console.log('funfou2')
+                document.getElementById('error').innerHTML = 'Usuario ou senha incorretos.'
             }
         }
     }
