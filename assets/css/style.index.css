@@ -19,6 +19,8 @@ body {
 #logo {
     border: 2px #028dff solid;
     margin-bottom:0.5rem;
+    width:12.5%; 
+    height:12.5%;
 }
 
 .inputs-container {
@@ -58,5 +60,16 @@ body {
 */
 
 @media screen and (max-width: 800px)  {
-    
+    #confirm {
+        padding: 0.25rem;
+        width:15%;
+        background-color: #65fb65;
+    }
+
+    #logo {
+        border: 2px #028dff solid;
+        margin-bottom:0.5rem;
+        width:35%; 
+        height:35%;
+    }
 }
