@@ -19,3 +19,33 @@ body {
     border:1px #000 solid;
     margin:0.4rem;
 }
+
+#fullHead {
+    background-color: #256294;
+    color:#f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width:98%;
+    border-radius: 0px 0px 8px 8px;
+    border-bottom:1px #000 solid;
+    padding:1%;
+}
+
+#headmen {
+    display: flex;
+    justify-content:left;
+    align-items:center;
+    width:70%;
+}
+
+#toplogo {
+    border-radius:100px;
+    border:2px #000 ridge;
+    margin-right:0.3rem;
+}
+
+#separator {
+    margin-right: 0.3rem;
+}
