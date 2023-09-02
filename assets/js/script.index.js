@@ -18,6 +18,10 @@ class Users {
                 window.location.href = 'pages/index.home.html'
             } else {
                 document.getElementById('error').innerHTML = 'Usuario ou senha incorretos.'
+                document.getElementById('error').style.display = 'block'
+                setTimeout(() => {
+                    document.getElementById('error').style.display = 'none'
+                }, 4000)
             }
         }
     }
