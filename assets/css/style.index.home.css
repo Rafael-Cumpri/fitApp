@@ -4,11 +4,11 @@
 }
 
 body {
-    background-color: #56b2fd;
+    background-color:#00315a;
 }
 
 #initial-meta {
-    background: linear-gradient(0.25turn, #256294, #9acef6);
+    background: linear-gradient(0.25turn, #004177, #5fb9ff);
     color:#f7f7f7;
     display: flex;
     justify-content: center;
@@ -21,7 +21,7 @@ body {
 }
 
 #fullHead {
-    background-color: #256294;
+    background: radial-gradient(#56b2fd, #00437a);
     color:#f7f7f7;
     display: flex;
     justify-content: center;
@@ -48,4 +48,48 @@ body {
 
 #separator {
     margin-right: 0.3rem;
+}
+
+svg {
+    fill:#629bfe
+}
+
+.interactionbut {
+    background-color:black;
+    padding:0.25rem;
+    border: none;
+    border-radius:4px;
+}
+
+#progress {
+    background: linear-gradient(0.25turn, #004177, #5fb9ff);
+    color:#f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-radius:8px;
+    border:1px #000 solid;
+    margin:0.4rem;
+    flex-direction:column;
+}
+
+.weekdays {
+    display: flex;
+    width:100%;
+    justify-content:space-between;
+    align-items:center;
+    padding:0.5rem;
+    border-radius:8px;
+}
+
+.weekdays div {
+    width: 14%;
+    text-align:center;
+}
+
+.weekdays div p {
+    font-size:0.8rem;
+    
 }
