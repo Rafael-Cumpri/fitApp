@@ -134,3 +134,33 @@ svg {
     flex-direction:column;
     margin:0.4rem;
 }
+
+#exercice {
+    background: linear-gradient(0.25turn, #004177, #5fb9ff);
+    color:#f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-radius:8px;
+    border:1px #000 solid;
+    margin:0.4rem;
+    flex-direction:column;
+}
+
+#startTimer {
+    background-color:#4a4aff;
+    padding:0.25rem;
+    border: 1px #000 solid;
+    border-radius:4px;
+    color:#000000;
+}
+
+#stopTimer {
+    background-color:#ff3d3d;
+    padding:0.25rem;
+    border: 1px #000 solid;
+    border-radius:4px;
+    color:#000000;
+}

@@ -1,7 +1,9 @@
 let todayDate = new Date()
 let today = todayDate.getDay()-1
 let todayid = `day${today}`
-
+let timers = []
+let timer = 0
+let intervalo = 0
 
 function funtionalday() {
     let todayday = todayDate.getDate()
@@ -50,4 +52,41 @@ function getdayname(weekday) {
         default:
             return 'Erro'
     }
+}
+
+function startTimer() {
+    let seconds = 0
+    let minutes = 0
+    let hours = 0
+    let days = 0
+    let exercice = document.getElementById('exercice').value
+    
+    intervalo = setInterval(() => {
+        seconds++
+        if (seconds == 60) {
+            minutes++
+            seconds = 0
+        }
+        if (minutes == 60) {
+            hours++
+            minutes = 0
+        }
+        if (hours == 24) {
+            days++
+            hours = 0
+        }
+        timer = `${exercice} por : ${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`
+        document.getElementById('recentexercice').innerHTML = timer
+    }, 1000)
+}
+
+function stopTimer() {
+    clearInterval(intervalo)
+    timers.push(timer)
+    timer = 0
+    let html = ''
+    timers.forEach(timer => {
+        html += `<h5>${timer}</h5>`
+    });
+    document.getElementById('recentexercice').innerHTML = html
 }
